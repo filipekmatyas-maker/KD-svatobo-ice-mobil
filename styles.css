@@ -2975,3 +2975,78 @@ textarea[readonly] {
     background: var(--gold);
   }
 }
+
+
+/* Čistší úvod bez opakování hlavních akcí */
+.hero-kd-clean .hero-actions,
+.hero-kd-clean .hero-facts,
+.hero-kd-clean .hero-facts-kd {
+  display: none !important;
+}
+
+.hero-kd-clean .hero-copy {
+  justify-content: center;
+}
+
+.hero-kd-clean h1 {
+  max-width: 780px;
+}
+
+.hero-kd-clean .hero-copy p {
+  max-width: 650px;
+}
+
+.hero-note {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.hero-note span {
+  display: inline-flex;
+  align-items: center;
+  padding: 11px 15px;
+  border-radius: 999px;
+  background: rgba(185,138,66,.13);
+  border: 1px solid rgba(185,138,66,.22);
+  color: var(--ink);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+.kd-hero-card-clean {
+  grid-template-columns: 1fr !important;
+}
+
+.kd-hero-card-clean p {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .hero-kd-clean .hero-copy {
+    padding-bottom: 24px !important;
+  }
+
+  .hero-note {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .hero-note span {
+    justify-content: center;
+    border-radius: 16px;
+    font-size: 13px;
+  }
+
+  .hero-kd-clean .hero-image,
+  .hero-kd-clean .hero-image-kd {
+    height: 330px !important;
+    min-height: 330px !important;
+  }
+
+  .kd-hero-card-clean h3 {
+    font-size: 24px !important;
+  }
+}
