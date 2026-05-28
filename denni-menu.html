@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KD Svatobořice-Mistřín | Denní menu</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="mobile-ready">
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">KD</span>
+      <span>KD <em>Svatobořice-Mistřín</em></span>
+    </a>
+
+    <button class="mobile-toggle" aria-label="Otevřít menu">☰</button>
+
+    <nav class="nav-links">
+      <a href="index.html">Úvod</a>
+      <a href="menu.html">Menu</a>
+      <a href="denni-menu.html" class="daily-nav">🍽️ Denní menu</a>
+      <a href="rozvoz.html" class="delivery-nav">🚗 Rozvoz</a>
+      <a href="index.html#rezervace" class="nav-reserve">Rezervace</a>
+    </nav>
+  </header>
+
+  <section class="daily-hero daily-hero-days">
+    <div class="reveal">
+      <div class="eyebrow">Polední nabídka</div>
+      <h1>Denní menu</h1>
+      <p>Vyber si den v týdnu. Nabídka se přepne plynulou animací bez načítání další stránky.</p>
+      <div class="daily-hero-meta">
+        <span>Menu 10:30–13:45</span>
+        <span>Polévka k menu zdarma</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section daily-section">
+      <div class="weekday-shell reveal">
+        <div class="weekday-head">
+          <div>
+            <div class="eyebrow">Týdenní přehled</div>
+            <h2>Vyber den</h2>
+          </div>
+          <p>Jídla jsou zatím podobná jako v ukázce, ale každý den můžeš jednoduše upravit v HTML.</p>
+        </div>
+
+        <div class="weekday-tabs" role="tablist">
+          <button class="day-tab active" data-day="po">Pondělí</button>
+          <button class="day-tab" data-day="ut">Úterý</button>
+          <button class="day-tab" data-day="st">Středa</button>
+          <button class="day-tab" data-day="ct">Čtvrtek</button>
+          <button class="day-tab" data-day="pa">Pátek</button>
+        </div>
+      </div>
+
+      <div class="day-panels">
+        <section class="day-panel active" id="day-po">
+          <div class="daily-layout">
+            <aside class="daily-sidebar">
+              <div class="daily-date-card"><span>Pondělí</span><strong>25.5.</strong><p>Polední menu do 13:45 nebo do vyprodání.</p></div>
+              <div class="daily-note"><strong>Polévka zdarma</strong><p>K hlavnímu menu zdarma. Nevztahuje se na dršťkovou.</p></div>
+              <a href="index.html#rezervace" class="btn">Rezervovat stůl</a>
+            </aside>
+            <div class="daily-content">
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Polévky</div><h2>Pondělní polévky</h2></div><span class="daily-pill">0,33 l</span></div>
+                <div class="soup-grid">
+                  <article class="daily-item"><div><h3>Slepičí vývar s těstovinou</h3><p>Lehká klasická polévka.</p></div><strong>20 Kč</strong></article>
+                  <article class="daily-item"><div><h3>Čočková s uzeninou</h3><p>Hustá čočková polévka.</p></div><strong>30 Kč</strong></article>
+                  <article class="daily-item premium"><div><h3>Dršťková</h3><p>Není zahrnutá zdarma k menu.</p></div><strong>55 Kč</strong></article>
+                </div>
+              </div>
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Hlavní jídla</div><h2>Pondělní nabídka</h2></div><span class="daily-pill">výběr dne</span></div>
+                <div class="daily-menu-list">
+                  <article class="daily-row recommended"><span>1</span><div><h3>Kuřecí kostky na roštu</h3><p>200 g, pikantní kari omáčka, hranolky nebo vařené brambory.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>2</span><div><h3>Vepřový vrabec</h3><p>200 g, zelí, knedlík.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>3</span><div><h3>Smažený sýr</h3><p>120 g, hranolky, tatarka.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>4</span><div><h3>Zapečené těstoviny</h3><p>400 g, uzené maso, čalamáda.</p></div><strong>149 Kč</strong></article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="day-panel" id="day-ut">
+          <div class="daily-layout">
+            <aside class="daily-sidebar">
+              <div class="daily-date-card"><span>Úterý</span><strong>26.5.</strong><p>Polední menu do 13:45 nebo do vyprodání.</p></div>
+              <div class="daily-note"><strong>Polévka zdarma</strong><p>K hlavnímu menu zdarma. Nevztahuje se na dršťkovou.</p></div>
+              <a href="index.html#rezervace" class="btn">Rezervovat stůl</a>
+            </aside>
+            <div class="daily-content">
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Polévky</div><h2>Úterní polévky</h2></div><span class="daily-pill">0,33 l</span></div>
+                <div class="soup-grid">
+                  <article class="daily-item"><div><h3>Slepičí vývar s těstovinou</h3><p>Lehká klasická polévka.</p></div><strong>20 Kč</strong></article>
+                  <article class="daily-item"><div><h3>Čočková s uzeninou</h3><p>Hustá čočková polévka.</p></div><strong>30 Kč</strong></article>
+                  <article class="daily-item premium"><div><h3>Dršťková</h3><p>Není zahrnutá zdarma k menu.</p></div><strong>55 Kč</strong></article>
+                </div>
+              </div>
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Hlavní jídla</div><h2>Úterní nabídka</h2></div><span class="daily-pill">výběr dne</span></div>
+                <div class="daily-menu-list">
+                  <article class="daily-row recommended"><span>1</span><div><h3>Losos na roštu</h3><p>200 g, bylinkový přeliv, vařené brambory nebo hranolky.</p></div><strong>179 Kč</strong></article>
+                  <article class="daily-row"><span>2</span><div><h3>Hovězí líčka na houbách</h3><p>200 g, rýže, okurek.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>3</span><div><h3>Smažený hermelín</h3><p>100 g, hranolky, tatarka.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row dessert-row"><span>4</span><div><h3>Jablečný závin</h3><p>360 g, sladká položka denního menu.</p></div><strong>109 Kč</strong></article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="day-panel" id="day-st">
+          <div class="daily-layout">
+            <aside class="daily-sidebar">
+              <div class="daily-date-card"><span>Středa</span><strong>27.5.</strong><p>Polední menu do 13:45 nebo do vyprodání.</p></div>
+              <div class="daily-note"><strong>Polévka zdarma</strong><p>K hlavnímu menu zdarma. Nevztahuje se na dršťkovou.</p></div>
+              <a href="index.html#rezervace" class="btn">Rezervovat stůl</a>
+            </aside>
+            <div class="daily-content">
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Polévky</div><h2>Středeční polévky</h2></div><span class="daily-pill">0,33 l</span></div>
+                <div class="soup-grid">
+                  <article class="daily-item"><div><h3>Slepičí vývar s těstovinou</h3><p>Lehká klasická polévka.</p></div><strong>20 Kč</strong></article>
+                  <article class="daily-item"><div><h3>Čočková s uzeninou</h3><p>Hustá čočková polévka.</p></div><strong>30 Kč</strong></article>
+                  <article class="daily-item premium"><div><h3>Dršťková</h3><p>Není zahrnutá zdarma k menu.</p></div><strong>55 Kč</strong></article>
+                </div>
+              </div>
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Hlavní jídla</div><h2>Středeční nabídka</h2></div><span class="daily-pill">výběr dne</span></div>
+                <div class="daily-menu-list">
+                  <article class="daily-row recommended"><span>1</span><div><h3>XXL smažený vepřový řízek s česnekem</h3><p>250 g, bramborový salát s majonézou.</p></div><strong>189 Kč</strong></article>
+                  <article class="daily-row"><span>2</span><div><h3>Štěpánská hovězí pečeně</h3><p>150 g, rýže, okurek.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>3</span><div><h3>Vařené vejce</h3><p>2 ks, dušený špenát, vařené brambory.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>4</span><div><h3>Smažená niva</h3><p>100 g, hranolky, tatarka.</p></div><strong>149 Kč</strong></article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="day-panel" id="day-ct">
+          <div class="daily-layout">
+            <aside class="daily-sidebar">
+              <div class="daily-date-card"><span>Čtvrtek</span><strong>28.5.</strong><p>Polední menu do 13:45 nebo do vyprodání.</p></div>
+              <div class="daily-note"><strong>Polévka zdarma</strong><p>K hlavnímu menu zdarma. Nevztahuje se na dršťkovou.</p></div>
+              <a href="index.html#rezervace" class="btn">Rezervovat stůl</a>
+            </aside>
+            <div class="daily-content">
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Polévky</div><h2>Čtvrteční polévky</h2></div><span class="daily-pill">0,33 l</span></div>
+                <div class="soup-grid">
+                  <article class="daily-item"><div><h3>Slepičí vývar s těstovinou</h3><p>Lehká klasická polévka.</p></div><strong>20 Kč</strong></article>
+                  <article class="daily-item"><div><h3>Čočková s uzeninou</h3><p>Hustá čočková polévka.</p></div><strong>30 Kč</strong></article>
+                  <article class="daily-item premium"><div><h3>Dršťková</h3><p>Není zahrnutá zdarma k menu.</p></div><strong>55 Kč</strong></article>
+                </div>
+              </div>
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Hlavní jídla</div><h2>Čtvrteční nabídka</h2></div><span class="daily-pill">17 jídel</span></div>
+                <div class="daily-menu-list">
+                  <article class="daily-row"><span>1</span><div><h3>Kuřecí kostky na roštu</h3><p>200 g, pikantní kari omáčka, hranolky nebo vařené brambory.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>2</span><div><h3>Losos na roštu</h3><p>200 g, bylinkový přeliv, vařené brambory nebo hranolky.</p></div><strong>179 Kč</strong></article>
+                  <article class="daily-row recommended"><span>3</span><div><h3>XXL smažený vepřový řízek s česnekem</h3><p>250 g, bramborový salát s majonézou.</p></div><strong>189 Kč</strong></article>
+                  <article class="daily-row"><span>4</span><div><h3>Smažená vepřová krkovička s česnekem</h3><p>200 g, bramborový salát s majonézou.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>5</span><div><h3>Hovězí vařené</h3><p>150 g, česneková omáčka, knedlík.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>6</span><div><h3>Vepřový vrabec</h3><p>200 g, zelí, knedlík.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>7</span><div><h3>Hovězí líčka na houbách</h3><p>200 g, rýže, okurek.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>8</span><div><h3>Štěpánská hovězí pečeně</h3><p>150 g, rýže, okurek.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>9</span><div><h3>Zapečené těstoviny</h3><p>400 g, uzené maso, čalamáda.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>10</span><div><h3>Smažený mletý řízek se sýrem</h3><p>150 g, vařené brambory, tatarka.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>11</span><div><h3>Pečená vepřová krkovička</h3><p>150 g, dušený špenát, bramborový knedlík nebo vařené brambory.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>12</span><div><h3>Vařené vejce</h3><p>2 ks, dušený špenát, vařené brambory.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row dessert-row"><span>13</span><div><h3>Jablečný závin</h3><p>360 g, sladká položka denního menu.</p></div><strong>109 Kč</strong></article>
+                  <article class="daily-row"><span>14</span><div><h3>Smažený sýr</h3><p>120 g, hranolky, tatarka.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>15</span><div><h3>Smažený hermelín</h3><p>100 g, hranolky, tatarka.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>16</span><div><h3>Smažená niva</h3><p>100 g, hranolky, tatarka.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row"><span>17</span><div><h3>Smažený romadur</h3><p>100 g, hranolky, tatarka.</p></div><strong>149 Kč</strong></article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="day-panel" id="day-pa">
+          <div class="daily-layout">
+            <aside class="daily-sidebar">
+              <div class="daily-date-card"><span>Pátek</span><strong>29.5.</strong><p>Polední menu do 13:45 nebo do vyprodání.</p></div>
+              <div class="daily-note"><strong>Polévka zdarma</strong><p>K hlavnímu menu zdarma. Nevztahuje se na dršťkovou.</p></div>
+              <a href="index.html#rezervace" class="btn">Rezervovat stůl</a>
+            </aside>
+            <div class="daily-content">
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Polévky</div><h2>Páteční polévky</h2></div><span class="daily-pill">0,33 l</span></div>
+                <div class="soup-grid">
+                  <article class="daily-item"><div><h3>Slepičí vývar s těstovinou</h3><p>Lehká klasická polévka.</p></div><strong>20 Kč</strong></article>
+                  <article class="daily-item"><div><h3>Čočková s uzeninou</h3><p>Hustá čočková polévka.</p></div><strong>30 Kč</strong></article>
+                  <article class="daily-item premium"><div><h3>Dršťková</h3><p>Není zahrnutá zdarma k menu.</p></div><strong>55 Kč</strong></article>
+                </div>
+              </div>
+              <div class="daily-block">
+                <div class="daily-block-head"><div><div class="eyebrow">Hlavní jídla</div><h2>Páteční nabídka</h2></div><span class="daily-pill">výběr dne</span></div>
+                <div class="daily-menu-list">
+                  <article class="daily-row recommended"><span>1</span><div><h3>Smažená vepřová krkovička s česnekem</h3><p>200 g, bramborový salát s majonézou.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>2</span><div><h3>Hovězí vařené</h3><p>150 g, česneková omáčka, knedlík.</p></div><strong>159 Kč</strong></article>
+                  <article class="daily-row"><span>3</span><div><h3>Smažený romadur</h3><p>100 g, hranolky, tatarka.</p></div><strong>149 Kč</strong></article>
+                  <article class="daily-row dessert-row"><span>4</span><div><h3>Jablečný závin</h3><p>360 g, sladká položka denního menu.</p></div><strong>109 Kč</strong></article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="daily-bottom-banner">
+      <div class="reveal">
+        <span>Dobrou chuť</span>
+        <h2>Přejeme Vám příjemný oběd.</h2>
+        <p>Dny můžeš upravit přímo v souboru denni-menu.html. Stačí přepsat texty a ceny v jednotlivých panelech.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><h3>KD Svatobořice-Mistřín</h3><p>Restaurace KD s denním menu, rezervacemi a prostorem pro soukromé akce.</p></div>
+    <div><h4>Kontakt</h4><p>Hlavní 1080/111, 696 04 Svatobořice-Mistřín</p><p>+420 608 818 130</p><p>restaurace.kd.objednavka@seznam.cz</p></div>
+    <div><h4>Otevírací doba</h4><p>Po–Čt: 11:00–22:00</p><p>Pá–So: 11:00–23:00</p><p>Ne: 11:00–21:00</p></div>
+    <div><h4>Stránky</h4><a href="index.html">Úvod</a><a href="menu.html">Menu</a><a href="denni-menu.html">Denní menu</a><a href="rozvoz.html">Rozvoz</a><a href="index.html#rezervace">Rezervace</a><a href="prava.html">Práva</a><a href="prava.html">Práva</a></div>
+    <div class="copyright-bar">
+      © 2026 KD Svatobořice-Mistřín. Všechna práva vyhrazena. Kopírování obsahu, designu a textů bez souhlasu není povoleno.
+    </div>
+  </footer>
+
+
+  <nav class="mobile-bottom-bar" aria-label="Rychlá mobilní navigace">
+    <a href="denni-menu.html">🍽️<span>Denní menu</span></a>
+    <a href="rozvoz.html">🚗<span>Rozvoz</span></a>
+    <a href="index.html#rezervace">📅<span>Rezervace</span></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KD Svatobořice-Mistřín | Rozvoz</title>
+  <link rel="preconnect" href="https://images.unsplash.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="mobile-ready">
+  <header class="navbar">
+    <a class="logo" href="index.html">
+      <span class="logo-mark">KD</span>
+      <span>KD <em>Svatobořice-Mistřín</em></span>
+    </a>
+
+    <button class="mobile-toggle" aria-label="Otevřít menu">☰</button>
+
+    <nav class="nav-links">
+      <a href="index.html">Úvod</a>
+      <a href="menu.html">Menu</a>
+      <a href="denni-menu.html" class="daily-nav">🍽️ Denní menu</a>
+      <a href="rozvoz.html" class="delivery-nav">🚗 Rozvoz</a>
+      <a href="index.html#rezervace" class="nav-reserve">Rezervace</a>
+    </nav>
+  </header>
+
+  <section class="delivery-hero">
+    <div class="reveal">
+      <div class="eyebrow">Objednávka jídla</div>
+      <h1>Rozvoz KD</h1>
+      <p>Vyplňte objednávku, adresu a čas doručení. Objednávka přijde přímo na e-mail restaurace.</p>
+      <div class="daily-hero-meta">
+        <span>Rozvoz 12:00–20:00</span>
+        <span>Denní menu i vybraná jídla</span>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <section class="section delivery-order-section">
+      <div class="delivery-order-grid">
+        <aside class="delivery-info reveal">
+          <div class="delivery-info-card">
+            <span>Jak to funguje</span>
+            <h2>Objednávka přes formulář</h2>
+            <p>
+              Zákazník vyplní údaje, vybere obec a objednávka se odešle přes Web3Forms.
+              Do e-mailu přijde jméno, telefon, adresa, čas, vybraná jídla, doprava i celková cena.
+            </p>
+          </div>
+
+          <div class="delivery-zone-card">
+            <strong>Rozvozová oblast</strong>
+            <p>Cena dopravy se automaticky přičte podle vybrané obce.</p>
+          </div>
+
+          <div class="delivery-price-card">
+            <strong>Ceník dopravy</strong>
+            <div><span>Svatobořice-Mistřín</span><b>30 Kč</b></div>
+            <div><span>Milotice</span><b>40 Kč</b></div>
+            <div><span>Dubňany</span><b>50 Kč</b></div>
+            <div><span>Kyjov</span><b>60 Kč</b></div>
+            <div><span>Hodonín</span><b>90 Kč</b></div>
+          </div>
+
+          <div class="delivery-zone-card dark">
+            <strong>Platba</strong>
+            <p>Hotově při převzetí. Případně si můžeš doplnit platbu kartou nebo QR kódem.</p>
+          </div>
+        </aside>
+
+        <div class="delivery-form-panel reveal">
+          <div class="eyebrow">Formulář rozvozu</div>
+          <h2>Objednat rozvoz</h2>
+          <p>Vyberte jídlo, čas doručení a zadejte adresu. Povinná pole jsou označená automaticky přes <strong>required</strong>.</p>
+
+          <form action="https://api.web3forms.com/submit" method="POST" class="delivery-form">
+            <input type="hidden" name="access_key" value="689ebc79-532f-4594-894b-cbcc098f4129">
+            <input type="hidden" name="subject" value="Nová objednávka rozvozu z webu KD Svatobořice-Mistřín">
+
+            <div class="form-row">
+              <input type="text" name="jmeno" placeholder="Jméno a příjmení" required>
+              <input type="tel" name="telefon" placeholder="Telefon" required>
+            </div>
+
+            <div class="form-row form-row-three">
+              <select name="obec" id="delivery-town" required>
+                <option value="" data-fee="0">Vyberte obec</option>
+                <option value="Svatobořice-Mistřín" data-fee="30">Svatobořice-Mistřín — doprava 30 Kč</option>
+                <option value="Milotice" data-fee="40">Milotice — doprava 40 Kč</option>
+                <option value="Dubňany" data-fee="50">Dubňany — doprava 50 Kč</option>
+                <option value="Kyjov" data-fee="60">Kyjov — doprava 60 Kč</option>
+                <option value="Hodonín" data-fee="90">Hodonín — doprava 90 Kč</option>
+                <option value="Jiná obec" data-fee="0">Jiná obec — cena po domluvě</option>
+              </select>
+              <input type="text" name="ulice" placeholder="Ulice" required>
+              <input type="text" name="cislo_popisne" placeholder="Číslo popisné" required>
+            </div>
+
+            <div class="form-row">
+              <select name="cas_doruceni" required>
+                <option value="">Čas doručení</option>
+                <option>12:00</option>
+                <option>13:00</option>
+                <option>14:00</option>
+                <option>15:00</option>
+                <option>16:00</option>
+                <option>17:00</option>
+                <option>18:00</option>
+                <option>19:00</option>
+                <option>20:00</option>
+              </select>
+
+              <select name="zpusob_platby" required>
+                <option value="">Platba</option>
+                <option>Hotově při převzetí</option>
+                <option>Kartou při převzetí</option>
+              </select>
+            </div>
+
+            <div class="order-picker">
+              <div class="order-picker-head">
+                <div>
+                  <div class="eyebrow">Vyberte jídlo</div>
+                  <h3>Naklikat objednávku</h3>
+                </div>
+                <span>+ / −</span>
+              </div>
+
+              <div class="order-items">
+                <article class="order-food" data-name="Kuřecí kostky na roštu" data-price="159">
+                  <div>
+                    <h4>Kuřecí kostky na roštu</h4>
+                    <p>Pikantní kari omáčka, hranolky nebo vařené brambory.</p>
+                    <strong>159 Kč</strong>
+                  </div>
+                  <div class="quantity-control">
+                    <button type="button" class="qty-btn minus">−</button>
+                    <span class="qty">0</span>
+                    <button type="button" class="qty-btn plus">+</button>
+                  </div>
+                </article>
+
+                <article class="order-food" data-name="Losos na roštu" data-price="179">
+                  <div>
+                    <h4>Losos na roštu</h4>
+                    <p>Bylinkový přeliv, vařené brambory nebo hranolky.</p>
+                    <strong>179 Kč</strong>
+                  </div>
+                  <div class="quantity-control">
+                    <button type="button" class="qty-btn minus">−</button>
+                    <span class="qty">0</span>
+                    <button type="button" class="qty-btn plus">+</button>
+                  </div>
+                </article>
+
+                <article class="order-food" data-name="XXL smažený vepřový řízek s česnekem" data-price="189">
+                  <div>
+                    <h4>XXL smažený vepřový řízek</h4>
+                    <p>Bramborový salát s majonézou.</p>
+                    <strong>189 Kč</strong>
+                  </div>
+                  <div class="quantity-control">
+                    <button type="button" class="qty-btn minus">−</button>
+                    <span class="qty">0</span>
+                    <button type="button" class="qty-btn plus">+</button>
+                  </div>
+                </article>
+
+                <article class="order-food" data-name="Smažený sýr" data-price="149">
+                  <div>
+                    <h4>Smažený sýr</h4>
+                    <p>Hranolky, tatarka.</p>
+                    <strong>149 Kč</strong>
+                  </div>
+                  <div class="quantity-control">
+                    <button type="button" class="qty-btn minus">−</button>
+                    <span class="qty">0</span>
+                    <button type="button" class="qty-btn plus">+</button>
+                  </div>
+                </article>
+
+                <article class="order-food" data-name="Smažený hermelín" data-price="149">
+                  <div>
+                    <h4>Smažený hermelín</h4>
+                    <p>Hranolky, tatarka.</p>
+                    <strong>149 Kč</strong>
+                  </div>
+                  <div class="quantity-control">
+                    <button type="button" class="qty-btn minus">−</button>
+                    <span class="qty">0</span>
+                    <button type="button" class="qty-btn plus">+</button>
+                  </div>
+                </article>
+
+                <article class="order-food" data-name="Jablečný závin" data-price="109">
+                  <div>
+                    <h4>Jablečný závin</h4>
+                    <p>Sladká položka denního menu.</p>
+                    <strong>109 Kč</strong>
+                  </div>
+                  <div class="quantity-control">
+                    <button type="button" class="qty-btn minus">−</button>
+                    <span class="qty">0</span>
+                    <button type="button" class="qty-btn plus">+</button>
+                  </div>
+                </article>
+              </div>
+            </div>
+
+            <label class="order-label" for="jidlo">Souhrn objednávky</label>
+            <textarea id="jidlo" name="objednavka" placeholder="Tady se automaticky zobrazí naklikaná jídla." readonly required></textarea>
+            <input type="hidden" id="cena-jidel" name="cena_jidel" value="0 Kč">
+            <input type="hidden" id="cena-dopravy" name="cena_dopravy" value="0 Kč">
+            <input type="hidden" id="celkova-cena" name="orientacni_celkova_cena" value="0 Kč">
+
+            <div class="order-summary order-summary-detailed">
+              <div><span>Jídla</span><strong id="food-price">0 Kč</strong></div>
+              <div><span>Doprava</span><strong id="delivery-price">0 Kč</strong></div>
+              <div class="summary-total"><span>Celkem</span><strong id="total-price">0 Kč</strong></div>
+            </div>
+
+            <textarea name="poznamka" placeholder="Poznámka k doručení: patro, zvonek, bez příboru, zavolat předem..."></textarea>
+
+            <button class="btn" type="submit">Odeslat objednávku rozvozu</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="section delivery-menu-help">
+      <div class="section-title center reveal">
+        <div class="eyebrow">Tip</div>
+        <h2>Jak si zákazník vybere jídlo?</h2>
+        <p>Vedle formuláře můžeš nechat odkaz na denní menu. Zákazník si zkopíruje název jídla a vloží ho do objednávky.</p>
+        <a href="denni-menu.html" class="btn">Zobrazit denní menu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div><h3>KD Svatobořice-Mistřín</h3><p>Restaurace KD s denním menu, rezervacemi a rozvozem.</p></div>
+    <div><h4>Kontakt</h4><p>Hlavní 1080/111, 696 04 Svatobořice-Mistřín</p><p>+420 608 818 130</p><p>restaurace.kd.objednavka@seznam.cz</p></div>
+    <div><h4>Otevírací doba</h4><p>Po–Čt: 11:00–22:00</p><p>Pá–So: 11:00–23:00</p><p>Ne: 11:00–21:00</p></div>
+    <div><h4>Stránky</h4><a href="index.html">Úvod</a><a href="menu.html">Menu</a><a href="denni-menu.html">Denní menu</a><a href="rozvoz.html">Rozvoz</a><a href="index.html#rezervace">Rezervace</a><a href="prava.html">Práva</a><a href="prava.html">Práva</a></div>
+    <div class="copyright-bar">
+      © 2026 KD Svatobořice-Mistřín. Všechna práva vyhrazena. Kopírování obsahu, designu a textů bez souhlasu není povoleno.
+    </div>
+  </footer>
+
+
+  <nav class="mobile-bottom-bar" aria-label="Rychlá mobilní navigace">
+    <a href="denni-menu.html">🍽️<span>Denní menu</span></a>
+    <a href="rozvoz.html">🚗<span>Rozvoz</span></a>
+    <a href="index.html#rezervace">📅<span>Rezervace</span></a>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
